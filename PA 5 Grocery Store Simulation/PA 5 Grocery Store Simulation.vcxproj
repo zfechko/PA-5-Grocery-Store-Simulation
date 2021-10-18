@@ -143,12 +143,14 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Queue.cpp" />
     <ClCompile Include="QueueNode.cpp" />
+    <ClCompile Include="Test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Data.h" />
     <ClInclude Include="libraries.h" />
     <ClInclude Include="Queue.h" />
     <ClInclude Include="QueueNode.h" />
+    <ClInclude Include="Test.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
