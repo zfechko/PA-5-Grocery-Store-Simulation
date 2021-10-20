@@ -9,6 +9,13 @@ private:
 	QueueNode* pNext;
 
 public:
+	/*Constructors*/
 
+	/*Getters*/
+	QueueNode* getNextNode();
+	Data* getData();
+	/*Setters*/
+	void setNextNode(QueueNode* newNext);
+	void setData(Data* newData);
 };
 
