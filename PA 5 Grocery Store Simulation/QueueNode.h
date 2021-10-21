@@ -10,7 +10,7 @@ private:
 
 public:
 	/*Constructors*/
-
+	QueueNode(Data* newData = nullptr);
 	/*Getters*/
 	QueueNode* getNextNode();
 	Data* getData();

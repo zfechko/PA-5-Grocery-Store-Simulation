@@ -18,6 +18,8 @@ public:
 	void setTailPtr(QueueNode* const newTail);
 
 	/*Getters*/
+	QueueNode* getHeadPtr();
+	QueueNode* getTailPtr();
 
 	/*Member functions*/
 	bool isEmpty();

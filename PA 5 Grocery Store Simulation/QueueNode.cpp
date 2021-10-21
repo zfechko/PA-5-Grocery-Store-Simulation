@@ -1,5 +1,10 @@
 #include "QueueNode.h"
 
+QueueNode::QueueNode(Data* newData)
+{
+	pData = newData;
+}
+
 QueueNode* QueueNode::getNextNode()
 {
 	return this->pNext;

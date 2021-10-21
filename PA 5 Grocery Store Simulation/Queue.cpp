@@ -46,7 +46,7 @@ bool Queue::dequeue()
 		pTemp = pHead;
 		pHead = pTail = nullptr; //set both the head and tail to null
 		delete pTemp; //and delete pTemp
-		success = true
+		success = true;
 	}
 	else //there's more than one node in the queue
 	{
@@ -68,6 +68,16 @@ void Queue::setTailPtr(QueueNode* const newTail)
 	this->pTail = newTail;
 }
 
+QueueNode* Queue::getHeadPtr()
+{
+	return pHead;
+}
+
+QueueNode* Queue::getTailPtr()
+{
+	return pTail;
+}
+
 void Queue::printQueue(QueueNode* pNode)
 {
 	if (pNode != nullptr)
@@ -79,6 +89,5 @@ void Queue::printQueue(QueueNode* pNode)
 	{
 		cout << endl;
 	}
-	
-
 }
+

@@ -9,6 +9,9 @@ private:
 public:
 	void runTests();
 
-
+	void testEnqueueOnEmpty();
+	void testEnqueueOneNode();
+	void testDequeueOneNode();
+	void testDequeueTwoNodes();
 };
 
