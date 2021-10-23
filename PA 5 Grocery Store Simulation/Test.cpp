@@ -3,9 +3,18 @@
 void Test::runTests()
 {
 	testEnqueueOnEmpty();
+	cout << endl;
+	Sleep(2000);
 	testEnqueueOneNode();
+	cout << endl;
+	Sleep(2000);
 	testDequeueOneNode();
+	cout << endl;
+	Sleep(2000);
 	testDequeueTwoNodes();
+	cout << endl;
+	Sleep(2000);
+	runSimulationFor24Hours();
 }
 
 void Test::testEnqueueOnEmpty()
@@ -79,4 +88,10 @@ void Test::testDequeueTwoNodes()
 	{
 		cout << "Something doesn't work, because dequeue didn't do its job" << endl;
 	}
+}
+
+void Test::runSimulationFor24Hours()
+{
+	cout << "We are now going to simulate 24 hours of grocery lines...get ready.." << endl;
+	runSimulation(1440);
 }

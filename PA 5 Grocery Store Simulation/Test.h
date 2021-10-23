@@ -13,5 +13,6 @@ public:
 	void testEnqueueOneNode();
 	void testDequeueOneNode();
 	void testDequeueTwoNodes();
+	void runSimulationFor24Hours();
 };
 

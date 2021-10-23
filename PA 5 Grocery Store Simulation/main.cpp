@@ -6,10 +6,12 @@ Due 10.22.2021
 */
 
 #include "Queue.h"
+#include "Test.h"
 
 int main()
 {
 	srand(time(NULL));
-
+	Test t;
+	t.runTests();
 	return 0;
 }

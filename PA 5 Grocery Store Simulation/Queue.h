@@ -12,6 +12,7 @@ private:
 public:
 	/*Constructors/Destructors*/
 	Queue(QueueNode* pNewHead = nullptr, QueueNode* pNewTail = nullptr);
+	~Queue();
 
 	/*Setters*/
 	void setHeadPtr(QueueNode* const newHead);
@@ -25,6 +26,9 @@ public:
 	bool isEmpty();
 	bool enqueue(Data const &newData);
 	bool dequeue();
-	void printQueue(QueueNode* pNode)
+	void printQueue(QueueNode* pNode);
+	void noRussian(); //this is the destroy queue function, I just thought the name would be funny cuz taking out a queue of shoppers
 };
+
+void runSimulation(int simTime);
 
